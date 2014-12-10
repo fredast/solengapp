@@ -1,0 +1,60 @@
+<div class="container" id="cmd-navbar">
+	<div class="row">
+		<div class="col-md-4">
+			<p class="lead" id="report-title"></p>
+		</div>
+		<div class="col-md-4">
+			<form class="form-inline" role="form">
+				<input type="text" class="form-control" placeholder="Search" id="cmd-search-box">
+			</form>
+		</div>
+		<div class="col-md-4 text-right">
+			<button type="button" class="btn btn-primary" id="cmd-save">Save</button>
+			<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-discard">Discard</button>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modal-discard" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel">Discard changes?</h4>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure you want to discard unsaved changes?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-danger" id="cmd-confirm-discard">Discard</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="modal-save" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel">Save changes?</h4>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li>add <span id="data-nb-add"></span> <span class="data-report-name"></span>,</li>
+						<li>update <span id="data-nb-update"></span> <span class="data-report-name"></span>,</li>
+						<li>delete <span id="data-nb-delete"></span> <span class="data-report-name"></span>.</li>
+					</ul>
+					<p>SAVE INFO</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary" id="cmd-confirm-save" data-loading-text="Saving...">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div id="handsontable-container"></div>
+</div>

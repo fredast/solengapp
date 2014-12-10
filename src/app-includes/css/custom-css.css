@@ -1,0 +1,199 @@
+/* Feuille de style */
+
+/* Move the body bellow the navbar */
+body { padding-top: 60px; }
+
+/* 
+	------------
+	Handsontable
+	------------
+*/
+
+.handsontable {
+	font-size: 10px;
+}
+
+/* 
+	------------
+	Misc
+	------------
+*/
+
+#misc-body .bootstrap-tagsinput {
+width: 100% !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color:transparent !important;
+  margin-bottom: 0px !important;
+}
+
+#dash-modal-settings .bootstrap-tagsinput {
+width: 100% !important;
+}
+
+.misc-input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color:transparent !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.panel-title{
+	width: 90%;
+}
+
+/* 
+	------------
+	Dashboard
+	------------
+*/
+
+#dash-tabs-bar .close {
+	padding: 0 0 0 5px;
+}
+
+/* 
+	------------
+	Widgets
+	------------
+*/
+.grid-sizer {
+	width: 10%;
+}
+.widget { 
+	width: 10%; 
+}
+.widget:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+/* Size medium */
+.widget.medium {
+	width: 20%;
+}
+.widget.large {
+	width: 40%;
+}
+
+/* Content */
+.widget-content {
+	position: absolute;
+	top: 6%;
+	left: 6%;
+	bottom: 6%;
+	right: 6%;
+	padding: 6% 12%;
+	background-color: #f7f7f9;
+	border: 1px solid #e1e1e8;
+	border-radius: 4px;
+	overflow: auto;
+}
+.widget.medium .widget-content {
+	top: 3%;
+	left: 3%;
+	bottom: 3%;
+	right: 3%;
+	padding: 3% 6%;
+}
+.widget.large .widget-content {
+	top: 1.5%;
+	left: 1.5%;
+	bottom: 1.5%;
+	right: 1.5%;
+	padding: 1.5% 3%;
+}
+.widget-content .show-settings {
+	position: absolute;
+	bottom: 6%;
+	right: 6%;
+	cursor:pointer;
+}
+.widget.medium .widget-content .show-settings {
+	bottom: 3%;
+	right: 3%;
+}
+.widget.large .widget-content .show-settings {
+	bottom: 1.5%;
+	right: 1.5%;
+}
+.widget-content .title {
+	font-size: 110%;
+	margin: 0;
+}
+.widget-content p {
+	margin:0;
+}
+
+/* Thin */
+.widget.thin:before{
+	padding-top: 50%;
+}
+.widget.thin .widget-content {
+	top: 12%;
+	bottom: 12%;
+}
+.widget.medium.thin .widget-content {
+	top: 6%;
+	bottom: 6%;
+}
+.widget.large.thin .widget-content {
+	top: 3%;
+	bottom: 3%;
+}
+.widget.thin .show-settings {
+	bottom: 12%;
+}
+.widget.medium.thin .show-settings {
+	bottom: 6%;
+}
+.widget.large.thin .show-settings {
+	bottom: 3%;
+}
+
+/* Misc list */
+.misc-list {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor:pointer;
+}
+.popover-footer {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Report Number */
+.widget-number {
+	padding: 2px 0;
+	text-align: center;
+}
+.widget-number-value {
+	font-size: 150%;
+}
+
+/* Report table */
+.widget-content .handsontable-container {
+	padding-top: 10px;
+}
+.widget-content .handsontable .htDimmed {
+	color: black;
+}
+.popover-table {
+	font-size: 12px;
+}
+.popover-table tr > td:first-child {
+	font-weight: bold;
+}
